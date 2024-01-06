@@ -1,0 +1,19 @@
+# Read in the times (in minutes) for swimming, cycling, and running
+swim_time = int(input("Please enter the time taken for the swimming event (in minutes): "))
+cycle_time = int(input("Please enter the time taken for the cycling event (in minutes): "))
+run_time = int(input("Please enter the time taken for the running event (in minutes): "))
+
+# Calculate the total time taken to complete the triathlon
+total_time = swim_time + cycle_time + run_time
+
+# Determine the award the participant will receive based on the total time taken
+if total_time <= 100:
+    print("Congratulations! You have earned Provincial Colours.")
+elif total_time <= 105:
+    print("Congratulations! You have earned Provincial Half Colours.")
+elif total_time <= 110:
+    print("Congratulations! You have earned Provincial Scroll.")
+else:
+    print("Sorry, you did not qualify for an award.")
+
+# Note: The above implementation assumes that the times entered for the events are valid and positive integer values. You may want to add additional validation or error handling code in case the input provided by the user is invalid or unexpected.
